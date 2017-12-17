@@ -11,7 +11,7 @@ module.exports = function(app) {
 			password: req.body.password
 		}).then(function(dblogin{
 			(if password === login.password){
-			res.redirect(_dirname + /public/index.html");
+			res.redirect(_dirname + '/public/index.html');
 
 					});
 	});	    
