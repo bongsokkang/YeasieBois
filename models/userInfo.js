@@ -2,14 +2,17 @@ module.exports = function(sequelize, DataTypes) {
 	var LoginInfo = sequelize.define("Login", {
 		Username: {
 			type: DataTypes.STRING,
+			unique: true, 
 			allowNull: false
 		},
 		Password: {
 			type: DataTypes.STRING,
+			unique: true,
 			allowNull: false
 		},
 		Email: {
 			type: DataTypes.STRING,
+			unique:true,
 			allowNull: false
 		},
 		AuthToken: {
