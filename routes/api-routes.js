@@ -1,7 +1,20 @@
 var db = require("../models");
 
 module.exports = function(app) {
+		app.get("/login", function(req, res) {
+		res.sendFile(_dirname + '/signin.html');
+		});
+	});
+	app.post("/login", function(req, res) {
+		db.Login.create({
+			username:req.body.username,
+			password: req.body.password
+		}).then(function(dblogin{
+			(if password === login.password){
+			res.redirect(_dirname + /public/index.html");
 
+					});
+	});	    
 	app.get("/api/beers", function(req, res) {
 		db.Beer.findAll({}).then(function(dbBeer) {
 			res.json(dbBeer);
